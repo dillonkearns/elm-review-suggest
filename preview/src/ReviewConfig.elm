@@ -19,9 +19,15 @@ config : List Rule
 config =
     [ Review.Suggest.rule
         [ ( { author = "jfmengels"
-            , package = "elm-review-documentation "
+            , package = "elm-review-documentation"
             }
           , [ [ "Docs", "NoMissing", "rule" ]
+            ]
+          )
+        , ( { author = "jfmengels"
+            , package = "elm-review-common"
+            }
+          , [ [ "NoDeprecated", "rule" ]
             ]
           )
         ]
