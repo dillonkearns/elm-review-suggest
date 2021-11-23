@@ -11,11 +11,18 @@ when inside the directory containing this file.
 
 -}
 
-import Review.Suggest
 import Review.Rule exposing (Rule)
+import Review.Suggest
 
 
 config : List Rule
 config =
     [ Review.Suggest.rule
+        [ ( { author = "jfmengels"
+            , package = "elm-review-documentation "
+            }
+          , [ [ "Docs", "NoMissing", "rule" ]
+            ]
+          )
+        ]
     ]
