@@ -27,7 +27,10 @@ config =
         , ( { author = "jfmengels"
             , package = "elm-review-common"
             }
-          , [ [ "NoDeprecated", "rule" ]
+          , [ [ "NoExposingEverything", "rule" ]
+            , [ "NoDeprecated", "rule" ]
+            , [ "NoMissingTypeAnnotation", "rule" ]
+            , [ "NoMissingTypeExpose", "rule" ]
             ]
           )
         ]
